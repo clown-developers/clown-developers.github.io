@@ -28,7 +28,7 @@ function resetForm(withKittens){
 
   if (withKittens){
     $('.kittens').removeClass('kittens');
-    message = "Huzzzzzah Kittehs!"
+    message = "ESTO SOLO INICIA AHORA!!!"
   }
 
   $('.new-output').removeClass('new-output');
@@ -37,6 +37,7 @@ function resetForm(withKittens){
    $('.new-output').velocity(
     'scroll'
   ), {duration: 100}
+   if (message !="ESTO SOLO INICIA AHORA!!!")
    $('.prompt').addClass("shake animated");
 }
 
@@ -79,7 +80,7 @@ function resetForm(withKittens){
 
 			$.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=kittens', function(result){
 				gif = result.data.image_url;
-				$('.terminal').append('<img class="kitten-gif" src="' + gif + '"">');
+				$('.terminal').append('<img class="kitten-gif" src="http://media1.giphy.com//media//14l9SPRBFf2wx2/giphy.gif">');
 				resetForm(true);
 			});
 		}, (lines.length * 100) + 1000);
