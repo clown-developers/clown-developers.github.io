@@ -78,7 +78,7 @@ function resetForm(withKittens){
 		setTimeout(function(){
 			var gif;
 
-				$('.terminal').append('<img class="kitten-gif" src="http://media1.giphy.com//media//14l9SPRBFf2wx2/giphy.gif">');
+				$('.terminal').append('<img class="kitten-gif" src="http://media1.giphy.com/media/14l9SPRBFf2wx2/giphy.gif">');
 				resetForm(true);
 			}, (lines.length * 100) + 1000);
 	}
